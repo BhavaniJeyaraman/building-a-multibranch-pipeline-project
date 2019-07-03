@@ -4,7 +4,9 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'echo "Hello world!"'
-                sh 'echo "${currentBuild.description}"'
+                def a = "${currentBuild.description}"
+                sh 'echo "${a}"'
+               
                
             }
         }
