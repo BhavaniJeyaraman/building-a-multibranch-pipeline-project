@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'echo "Hello world!"'
-                currentBuild.rawBuild.project.description = "testing purpose"               
+                currentBuild.rawBuild.project.setDescription = "testing purpose"               
             }
         }
     }
